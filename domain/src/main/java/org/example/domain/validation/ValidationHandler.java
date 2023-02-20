@@ -2,7 +2,7 @@ package org.example.domain.validation;
 
 import java.util.List;
 
-public interface  ValidationHandler {
+public interface ValidationHandler {
 
     ValidationHandler append(Error anError);
 

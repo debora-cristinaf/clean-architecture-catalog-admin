@@ -4,24 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77010fe3-8307-4ec1-b98d-3ae14d268693" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/example/domain/category/CategoryGateway.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/example/domain/category/CategoryValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/example/domain/exception/DomainException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/example/domain/exception/NoStacktraceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/example/domain/pagination/Pagination.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/example/domain/pagination/SearchQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/example/domain/utils/InstantUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/example/domain/validation/Error.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/example/domain/validation/ValidationHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/example/domain/validation/Validator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/example/domain/validation/handler/ThrowsValidationHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="77010fe3-8307-4ec1-b98d-3ae14d268693" name="Changes" comment="feat: domain category">
+      <change afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/org/example/application/category/NullaryUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/org/example/application/category/UnitUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/org/example/application/category/create/CreateCategoryCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/org/example/application/category/create/CreateCategoryOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/org/example/application/category/create/CreateCategoryUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/org/example/application/category/create/DefaultCreateCategoryUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/test/java/org/example/application/category/CreateCategoryUseCaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/example/domain/validation/handler/Notification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/category/models/CategoryListResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/category/models/CategoryResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/category/models/CreateCategoryRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/configuration/WebServerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/configuration/usecases/CategoryUseCaseConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/persistence/CategoryJpaEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/persistence/CategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/resources/migrations/U1_Initial.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/resources/migrations/V1_Initial.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/domain/AggregateRoot.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/example/domain/AggregateRoot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/domain/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/example/domain/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/domain/category/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/example/domain/category/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/test/java/org/example/application/CategoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/test/java/org/example/application/CategoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/application/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/org/example/application/UseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/org/example/application/category/UseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/test/java/org/example/application/UseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/test/java/org/example/application/UseCaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/domain/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/domain/Identifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/example/domain/Identifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/domain/validation/ValidationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/example/domain/validation/ValidationHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/org/example/infrastructure/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +48,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -53,9 +68,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
         <option value="Record" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -85,6 +100,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\java\catalog-admin\infrastructure\src\main\resources\migrations" />
       <recent name="D:\java\catalog-admin" />
       <recent name="D:\java\application" />
       <recent name="D:\java\catalog-admin\src\main\java\org\example" />
@@ -226,6 +242,14 @@
       <option name="presentableId" value="Default" />
       <updated>1675290718087</updated>
     </task>
+    <task id="LOCAL-00001" summary="feat: domain category">
+      <created>1675808317810</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675808317810</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -238,5 +262,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: domain category" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: domain category" />
   </component>
 </project>

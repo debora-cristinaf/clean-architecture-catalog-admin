@@ -1,10 +1,16 @@
 package org.example.infrastructure;
 
-import org.example.application.UseCase;
+import org.example.application.category.UseCase;
+import org.example.infrastructure.configuration.WebServerConfig;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.core.env.AbstractEnvironment;
 
+@SpringBootApplication
 public class Main {
+
     public static void main(String[] args) {
-        System.out.println(new UseCase().execute());
-        System.out.println("Hello world!");
+        System.setProperty(AbstractEnvironment.DEFAULT_PROFILES_PROPERTY_NAME, "development");
+        SpringApplication.run(WebServerConfig.class, args);
     }
 }
