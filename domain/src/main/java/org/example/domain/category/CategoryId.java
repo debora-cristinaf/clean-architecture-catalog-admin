@@ -1,6 +1,7 @@
 package org.example.domain.category;
 
 import org.example.domain.Identifier;
+import org.example.domain.utils.IdUtils;
 
 import java.util.Objects;
 import java.util.UUID;
@@ -14,10 +15,9 @@ public class CategoryId extends Identifier {
         this.value = value;
     }
 
-    public static CategoryId unique(){
-        return new CategoryId(UUID.randomUUID().toString().toLowerCase());
+    public static CategoryId unique() {
+        return CategoryId.from(IdUtils.uuid());
     }
-
     public static CategoryId from(final String anId) {
         return new CategoryId(anId);
     }

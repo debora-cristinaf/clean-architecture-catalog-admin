@@ -12,6 +12,7 @@ public class CategoryUseCaseConfig {
     private final CategoryGateway categoryGateway;
 
     public CategoryUseCaseConfig(final CategoryGateway categoryGateway) {
+
         this.categoryGateway = categoryGateway;
     }
 

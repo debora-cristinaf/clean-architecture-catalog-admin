@@ -11,6 +11,7 @@ repositories {
 
 dependencies {
     testImplementation 'com.github.javafaker:javafaker:1.0.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.2'
 }
 
 configurations {
@@ -26,4 +27,13 @@ task testJar(type: Jar) {
 
 artifacts {
     testClasses testJar
+}
+
+test {
+    useJUnitPlatform {
+        includeTags("fast", "smoke & feature-a")
+        // excludeTags("slow", "ci")
+        includeEngines("junit-jupiter")
+        // excludeEngines("junit-vintage")
+    }
 }

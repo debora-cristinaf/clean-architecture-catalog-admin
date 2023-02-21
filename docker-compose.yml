@@ -9,7 +9,7 @@ services:
     profiles: ["app"]
     restart: unless-stopped
     env_file:
-      - .env.example
+      - .env.local
     ports:
       - 8080:8080
     depends_on:
@@ -27,7 +27,7 @@ services:
     security_opt:
       - seccomp:unconfined
     ports:
-      - 3306:3306
+      - "3307:3306"
     networks:
       - adm_videos_network
 
